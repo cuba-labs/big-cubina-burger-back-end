@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="com/company/burger/screens.xml"/>
+    <screen id="burger$MenuItem.browse"
+            template="com/company/burger/web/menuitem/menu-item-browse.xml"/>
+    <screen id="burger$MenuItem.edit"
+            template="com/company/burger/web/menuitem/menu-item-edit.xml"/>
+    <screen id="burger$OrderItem.edit"
+            template="com/company/burger/web/orderitem/order-item-edit.xml"/>
+    <screen id="burger$Order.browse"
+            template="com/company/burger/web/order/order-browse.xml"/>
+    <screen id="burger$Order.edit"
+            template="com/company/burger/web/order/order-edit.xml"/>
+</screen-config>

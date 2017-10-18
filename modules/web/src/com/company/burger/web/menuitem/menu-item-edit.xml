@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.company.burger.web.menuitem.MenuItemEdit"
+        datasource="menuItemDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.burger.web.menuitem">
+    <dsContext>
+        <datasource id="menuItemDs"
+                    class="com.company.burger.entity.MenuItem"
+                    view="menuItem-view"/>
+    </dsContext>
+    <dialogMode width="AUTO"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="menuItemDs">
+            <column width="250px">
+                <field property="image"/>
+                <field property="name"/>
+                <field property="weight"/>
+                <field property="price"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

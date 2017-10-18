@@ -1,0 +1,27 @@
+insert into SEC_USER
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, LOGIN, LOGIN_LC, PASSWORD, NAME, FIRST_NAME, LAST_NAME, MIDDLE_NAME, POSITION_, EMAIL, LANGUAGE_, TIME_ZONE, TIME_ZONE_AUTO, ACTIVE, CHANGE_PASSWORD_AT_LOGON, GROUP_ID, IP_MASK)
+values ('1c1fb6a7-4629-1999-b891-2b869cbdc193', '2016-04-26 11:54:48', 'admin', 1, '2016-04-26 11:54:48', null, null, null, 'demo', 'demo', 'ac2f77a70503dc1f7b15dd312cd67e559b39226d', 'Demo', null, null, null, null, null, 'en', null, null, true, false, '0fa2b1a5-1d68-4d69-9fbd-dff348347f93', null);
+
+insert into SEC_USER_ROLE
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, USER_ID, ROLE_ID)
+values ('9efc1fe6-8c34-aa2f-283c-524c6ebd029e', null, null, null, null, null, null, null, '1c1fb6a7-4629-1999-b891-2b869cbdc193', '0c018061-b26f-4de2-a5be-dff348347f93');
+
+insert into BURGER_MENU_ITEM
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, WEIGHT, PRICE)
+values ('a28c65d4-a61b-7c64-8386-5f88d3c244a9', '2016-04-26 12:30:54', 'admin', 2, '2016-04-26 12:50:03', null, null, null, 'Double NPE', 200, 5);
+
+insert into BURGER_MENU_ITEM
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, WEIGHT, PRICE)
+values ('f30bb5e6-29e4-4cf1-8d1a-db1a94ed2084', '2016-04-26 12:50:35', 'admin', 1, '2016-04-26 12:50:35', null, null, null, 'Long Java', 250, 3);
+
+insert into BURGER_MENU_ITEM
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, WEIGHT, PRICE)
+values ('7eacff1e-0879-ca8b-6407-b0de766aba67', '2016-04-26 12:50:59', 'admin', 1, '2016-04-26 12:50:59', null, null, null, 'LeBoorondoque Fries', 350, 5);
+
+insert into BURGER_MENU_ITEM
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, WEIGHT, PRICE)
+values ('46cf913b-a6b7-e25f-7aee-2cdfc5bc8412', '2016-04-26 12:51:26', 'admin', 1, '2016-04-26 12:51:26', null, null, null, 'Bug Bacon', 350, 4);
+
+insert into BURGER_MENU_ITEM
+(ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, WEIGHT, PRICE)
+values ('4049628a-4cc7-b48d-10ed-fed4f4801121', '2016-04-26 12:51:40', 'admin', 1, '2016-04-26 12:51:40', null, null, null, 'Chicken Deploy', 250, 3);
